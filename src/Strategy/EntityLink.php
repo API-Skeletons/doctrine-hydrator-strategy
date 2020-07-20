@@ -2,13 +2,13 @@
 
 namespace ZF\Doctrine\Hydrator\Strategy;
 
-use Zend\Hydrator\Strategy\StrategyInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\Hydrator\Strategy\StrategyInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 use DoctrineModule\Stdlib\Hydrator\DoctrineObject as DoctrineHydrator;
 use Doctrine\Common\Util\ClassUtils;
-use ZF\Hal\Link\LinkCollection;
-use ZF\Hal\Entity as HalEntity;
-use ZF\Hal\Link\Link;
+use Laminas\ApiTools\Hal\Link\LinkCollection;
+use Laminas\ApiTools\Hal\Entity as HalEntity;
+use Laminas\ApiTools\Hal\Link\Link;
 use stdClass;
 
 /**

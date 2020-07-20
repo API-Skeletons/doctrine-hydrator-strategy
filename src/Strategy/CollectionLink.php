@@ -2,12 +2,12 @@
 
 namespace ZF\Doctrine\Hydrator\Strategy;
 
-use Zend\Hydrator\Strategy\StrategyInterface;
-use Zend\Filter\FilterChain;
+use Laminas\Hydrator\Strategy\StrategyInterface;
+use Laminas\Filter\FilterChain;
 use DoctrineModule\Stdlib\Hydrator\Strategy\AbstractCollectionStrategy;
-use ZF\Hal\Link\LinkCollection;
-use ZF\Hal\Entity as HalEntity;
-use ZF\Hal\Link\Link;
+use Laminas\ApiTools\Hal\Link\LinkCollection;
+use Laminas\ApiTools\Hal\Entity as HalEntity;
+use Laminas\ApiTools\Hal\Link\Link;
 use stdClass;
 
 /**

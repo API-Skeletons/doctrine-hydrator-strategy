@@ -32,14 +32,14 @@ return [
             ],
         ],
     ],
-    'zf-versioning' => [
+    'api-tools-versioning' => [
         'uri' => [
             0 => 'db-api.rest.doctrine.album',
             1 => 'db-api.rest.doctrine.artist',
             2 => 'db-api.rest.doctrine.song',
         ],
     ],
-    'zf-rest' => [
+    'api-tools-rest' => [
         'DbApi\\V1\\Rest\\Album\\Controller' => [
             'listener' => 'DbApi\\V1\\Rest\\Album\\AlbumResource',
             'route_name' => 'db-api.rest.doctrine.album',
@@ -110,7 +110,7 @@ return [
             'service_name' => 'Song',
         ],
     ],
-    'zf-content-negotiation' => [
+    'api-tools-content-negotiation' => [
         'controllers' => [
             'DbApi\\V1\\Rest\\Album\\Controller' => 'HalJson',
             'DbApi\\V1\\Rest\\Artist\\Controller' => 'HalJson',
@@ -148,7 +148,7 @@ return [
             ],
         ],
     ],
-    'zf-hal' => [
+    'api-tools-hal' => [
         'metadata_map' => [
             'Db\\Entity\\Album' => [
                 'route_identifier_name' => 'album_id',
@@ -185,7 +185,7 @@ return [
             ],
         ],
     ],
-    'zf-apigility' => [
+    'laminas-api-tools' => [
         'doctrine-connected' => [
             'DbApi\\V1\\Rest\\Album\\AlbumResource' => [
                 'object_manager' => 'doctrine.entitymanager.orm_default',
@@ -229,7 +229,7 @@ return [
             'use_generated_hydrator' => true,
         ],
     ],
-    'zf-content-validation' => [
+    'api-tools-content-validation' => [
         'DbApi\\V1\\Rest\\Album\\Controller' => [
             'input_filter' => 'DbApi\\V1\\Rest\\Album\\Validator',
         ],
@@ -247,10 +247,10 @@ return [
                 'required' => false,
                 'filters' => [
                     0 => [
-                        'name' => 'Zend\\Filter\\StringTrim',
+                        'name' => 'Laminas\\Filter\\StringTrim',
                     ],
                     1 => [
-                        'name' => 'Zend\\Filter\\StripTags',
+                        'name' => 'Laminas\\Filter\\StripTags',
                     ],
                 ],
                 'validators' => [],
@@ -262,15 +262,15 @@ return [
                 'required' => false,
                 'filters' => [
                     0 => [
-                        'name' => 'Zend\\Filter\\StringTrim',
+                        'name' => 'Laminas\\Filter\\StringTrim',
                     ],
                     1 => [
-                        'name' => 'Zend\\Filter\\StripTags',
+                        'name' => 'Laminas\\Filter\\StripTags',
                     ],
                 ],
                 'validators' => [
                     0 => [
-                        'name' => 'Zend\\Validator\\StringLength',
+                        'name' => 'Laminas\\Validator\\StringLength',
                         'options' => [
                             'min' => 1,
                             'max' => 255,
@@ -285,10 +285,10 @@ return [
                 'required' => false,
                 'filters' => [
                     0 => [
-                        'name' => 'Zend\\Filter\\StringTrim',
+                        'name' => 'Laminas\\Filter\\StringTrim',
                     ],
                     1 => [
-                        'name' => 'Zend\\Filter\\StripTags',
+                        'name' => 'Laminas\\Filter\\StripTags',
                     ],
                 ],
                 'validators' => [],

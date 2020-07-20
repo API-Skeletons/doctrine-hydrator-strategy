@@ -2,9 +2,9 @@
 
 namespace ZF\Doctrine\Hydrator\Strategy;
 
-use Zend\Hydrator\Strategy\StrategyInterface;
+use Laminas\Hydrator\Strategy\StrategyInterface;
 use DoctrineModule\Stdlib\Hydrator\Strategy\AbstractCollectionStrategy;
-use ZF\Hal\Collection;
+use Laminas\ApiTools\Hal\Collection;
 
 /**
  * Class CollectionExtract

@@ -2,8 +2,8 @@
 
 namespace ZF\Doctrine\Hydrator\Strategy;
 
-use Zend\ServiceManager\FactoryInterface;
-use Zend\ServiceManager\ServiceLocatorInterface;
+use Laminas\ServiceManager\FactoryInterface;
+use Laminas\ServiceManager\ServiceLocatorInterface;
 use Interop\Container\ContainerInterface;
 
 class CollectionLinkFactory implements FactoryInterface
@@ -24,7 +24,7 @@ class CollectionLinkFactory implements FactoryInterface
         }
 
         $collectionLink = new CollectionLink();
-        $collectionLink->setMetadataMap($config['zf-hal']['metadata_map']);
+        $collectionLink->setMetadataMap($config['api-tools-hal']['metadata_map']);
         $collectionLink->setFilterKey($filterKey);
 
         return $collectionLink;

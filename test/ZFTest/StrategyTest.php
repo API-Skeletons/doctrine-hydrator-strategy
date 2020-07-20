@@ -5,8 +5,8 @@ namespace ZFTest\Doctrine\Hydrator\Strategy;
 use Doctrine\Common\DataFixtures\Loader as BaseLoader;
 use Doctrine\Common\DataFixtures\Executor\ORMExecutor;
 use Doctrine\Common\DataFixtures\Purger\ORMPurger;
-use Zend\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
-use Zend\Http\Request;
+use Laminas\Test\PHPUnit\Controller\AbstractHttpControllerTestCase;
+use Laminas\Http\Request;
 
 class StrategyTest extends AbstractHttpControllerTestCase
 {
@@ -28,7 +28,7 @@ class StrategyTest extends AbstractHttpControllerTestCase
         $objectManager->clear();
     }
 
-    public function setUp()
+    public function setUp() : void
     {
         $this->setApplicationConfig(
             include __DIR__ . '/../TestConfig.php'
