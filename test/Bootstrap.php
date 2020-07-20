@@ -50,7 +50,7 @@ class Bootstrap
                 'Laminas\Loader\StandardAutoloader' => array(
                     'autoregister_zf' => true,
                     'namespaces' => array(
-                        'ApiSkeletons\OAuth2\Doctrine\Permissions\Acl' => __DIR__ . '/../src/',
+                        'ApiSkeletons\\Doctrine\\Hydrator\\Strategy' => __DIR__ . '/../src/',
                         __NAMESPACE__ => __DIR__,
                     ),
                 ),

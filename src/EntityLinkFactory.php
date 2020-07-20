@@ -1,6 +1,6 @@
 <?php
 
-namespace ZF\Doctrine\Hydrator\Strategy;
+namespace ApiSkeletons\Doctrine\Hydrator\Strategy;
 
 use Laminas\ServiceManager\FactoryInterface;
 use Laminas\ServiceManager\ServiceLocatorInterface;

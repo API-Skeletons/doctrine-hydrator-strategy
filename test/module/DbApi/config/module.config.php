@@ -185,7 +185,7 @@ return [
             ],
         ],
     ],
-    'laminas-api-tools' => [
+    'api-tools' => [
         'doctrine-connected' => [
             'DbApi\\V1\\Rest\\Album\\AlbumResource' => [
                 'object_manager' => 'doctrine.entitymanager.orm_default',
@@ -207,8 +207,8 @@ return [
             'object_manager' => 'doctrine.entitymanager.orm_default',
             'by_value' => true,
             'strategies' => [
-                'artist' => 'ZF\Doctrine\Hydrator\Strategy\EntityLink',
-                'song' => 'ZF\Doctrine\Hydrator\Strategy\CollectionLink',
+                'artist' => 'ApiSkeletons\Doctrine\Hydrator\Strategy\EntityLink',
+                'song' => 'ApiSkeletons\Doctrine\Hydrator\Strategy\CollectionLink',
             ],
             'use_generated_hydrator' => true,
         ],
@@ -217,7 +217,7 @@ return [
             'object_manager' => 'doctrine.entitymanager.orm_default',
             'by_value' => true,
             'strategies' => [
-                'album' => 'ZF\Doctrine\Hydrator\Strategy\CollectionExtract',
+                'album' => 'ApiSkeletons\Doctrine\Hydrator\Strategy\CollectionExtract',
             ],
             'use_generated_hydrator' => true,
         ],

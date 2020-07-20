@@ -21,10 +21,12 @@ return [
         'Laminas\\ApiTools\\Rest',
         'Laminas\\ApiTools\\Rpc',
         'Laminas\\ApiTools\\Versioning',
+
         'DoctrineModule',
         'DoctrineORMModule',
         'Phpro\DoctrineHydrationModule',
         'Laminas\\ApiTools\\Doctrine\\Server',
+
         'ApiSkeletons\\Doctrine\\Hydrator\\Strategy',
         'Db',
         'DbApi',

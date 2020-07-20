@@ -1,4 +1,5 @@
 <?php
+
 namespace DbApi;
 
 use Laminas\ApiTools\Provider\ApiToolsProviderInterface;

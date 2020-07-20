@@ -1,6 +1,6 @@
 <?php
 
-namespace ApiSkeleontsTest\Doctrine\Hydrator\Strategy;
+namespace ApiSkeletonsTest\Doctrine\Hydrator\Strategy;
 
 use Doctrine\Common\DataFixtures\Loader as BaseLoader;
 use Doctrine\Common\DataFixtures\Executor\ORMExecutor;
@@ -53,7 +53,6 @@ class StrategyTest extends AbstractHttpControllerTestCase
         $this->getApplication()->run();
         $body = json_decode($this->getResponse()->getBody(), true);
         $this->assertResponseStatusCode(200);
-
         $this->assertEquals('Soft Cell', $body['name']);
         $this->assertEquals('1', $body['id']);
         $this->assertEquals('Non-Stop Erotic Cabaret', $body['_embedded']['album'][0]['name']);

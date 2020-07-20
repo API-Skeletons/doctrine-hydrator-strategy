@@ -1,6 +1,6 @@
 <?php
 
-namespace ZF\Doctrine\Hydrator\Strategy;
+namespace ApiSkeletons\Doctrine\Hydrator\Strategy;
 
 use Laminas\Hydrator\Strategy\StrategyInterface;
 use DoctrineModule\Stdlib\Hydrator\Strategy\AbstractCollectionStrategy;
