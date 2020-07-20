@@ -1,6 +1,6 @@
 <?php
 
-namespace ZF\Doctrine\Hydrator;
+namespace ZF\Doctrine\Hydrator\Strategy;
 
 class Module
 {

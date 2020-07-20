@@ -1,4 +1,5 @@
 <?php
+
 return [
     // This should be an array of module namespaces used in the application.
     'modules' => [
@@ -24,7 +25,7 @@ return [
         'DoctrineORMModule',
         'Phpro\DoctrineHydrationModule',
         'Laminas\\ApiTools\\Doctrine\\Server',
-        'ZF\\Doctrine\\Hydrator',
+        'ApiSkeletons\\Doctrine\\Hydrator\\Strategy',
         'Db',
         'DbApi',
     ],
@@ -46,6 +47,5 @@ return [
         'config_glob_paths' => [
             __DIR__ . '/autoload/{,*.}{global,local}.php',
         ],
-
     ],
 ];

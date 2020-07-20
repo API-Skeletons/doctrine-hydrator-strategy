@@ -1,6 +1,6 @@
 <?php
 
-namespace ZFTest\Doctrine\Hydrator\Strategy;
+namespace ApiSkeleontsTest\Doctrine\Hydrator\Strategy;
 
 use Doctrine\Common\DataFixtures\Loader as BaseLoader;
 use Doctrine\Common\DataFixtures\Executor\ORMExecutor;

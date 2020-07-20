@@ -1,9 +1,9 @@
 {
-    "name": "api-skeletons/zf-doctrine-hydrator",
-    "description": "A collection of common hydrators for phpro/zf-doctrine-hydration-module",
+    "name": "api-skeletons/doctrine-hydrator-strategy",
+    "description": "Hydrator Strategies for API Tools Doctrine for Laminas",
     "type": "library",
     "require": {
-        "php": "^7.1",
+        "php": "^7.3",
         "phpro/zf-doctrine-hydration-module": "^3.0",
         "laminas/laminas-eventmanager": "^2.4 || ~3.0",
         "laminas-api-tools/api-tools-doctrine": "^2.0",
@@ -39,16 +39,16 @@
     ],
     "autoload": {
         "psr-4": {
-            "ZF\\Doctrine\\Hydrator\\": "src/",
-            "ZFTest\\Doctrine\\Hydrator\\": "test/"
+            "ApiSkeletons\\Doctrine\\Hydrator\\Strategy\\": "src/",
+            "ApiSkeletonsTest\\Doctrine\\Hydrator\\Strategy\\": "test/"
         },
         "classmap": [
             "Module.php"
         ]
     },
     "extra": {
-        "zf": {
-            "module": "ZF\\Doctrine\\Hydrator"
+        "laminas": {
+            "module": "ApiSkeletons\\Doctrine\\Hydrator\\Strategy"
         }
     }
 }
